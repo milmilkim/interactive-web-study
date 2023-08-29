@@ -1,3 +1,4 @@
+
 import CanvasOption from './canvasOption.js';
 
 export default class Spark extends CanvasOption {
