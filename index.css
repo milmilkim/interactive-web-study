@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+  list-style: none;
+  border-bottom: 1px solid #666;
+  padding: 0.5rem;
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+  color: #666;
+}
+
+#main-nav {
+  width: 300px;
+  border: 1px solid #000;
+}
+
+#main-nav li {
+  cursor: pointer;
+}
+
+#main-nav :last-child {
+  border-bottom: none;
+}
