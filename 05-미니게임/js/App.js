@@ -75,6 +75,7 @@ export default class App {
         }
       }
 
+
       then = now - (delta % App.interval);
     };
 
