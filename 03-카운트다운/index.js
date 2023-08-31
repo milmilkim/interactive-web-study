@@ -9,7 +9,6 @@ let canvasHeight = innerHeight;
 const interval = 1000 / fps;
 
 const particles = [];
-
 const init = () => {
   canvasWidth = innerWidth;
   canvasHeight = innerHeight;

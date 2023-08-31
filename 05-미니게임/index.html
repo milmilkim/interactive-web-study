@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>미니게임</title>
-	<link rel="stylesheet" href="./style.css">
-</head>
-<body>
-	<img src="./assets/bg1.png" id="bg1-img" class="asset-image" />
-	<img src="./assets/bg2.png" id="bg2-img" class="asset-image" />
-	<img src="./assets/bg3.png" id="bg3-img" class="asset-image" />
-	<img src="./assets/Wall.png" id="wall-img" class="asset-image" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미니게임</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <img src="./assets/bg1.png" id="bg1-img" class="asset-image" />
+    <img src="./assets/bg2.png" id="bg2-img" class="asset-image" />
+    <img src="./assets/bg3.png" id="bg3-img" class="asset-image" />
+    <img src="./assets/Wall.png" id="wall-img" class="asset-image" />
+    <img src="./assets/bird.png" id="bird-img" class="asset-image" />
+    <img src="./assets/coin.png" id="coin-img" class="asset-image" />
 
-	<canvas></canvas>
-	<script type="module" src="./index.js"></script>
-</body>
+    <main>
+      <canvas></canvas>
+
+      <section class="ready-screen">
+        <img src="./assets/title.png" id="title-img" />
+        <img src="./assets/play.svg" id="play-img" />
+      </section>
+
+      <section class="finish-screen">
+        <div class="distance">0m</div>
+        <div class="coin">0 coin</div>
+        <img src="./assets/replay.svg" id="replay-img" />
+      </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
