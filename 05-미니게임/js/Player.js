@@ -21,8 +21,10 @@ export default class Player {
       this.height - 20
     );
 
+
+    // 클릭하면 떠오름
     App.canvas.addEventListener('click', () => {
-      this.vy += -8;
+      this.vy += -5;
     });
   }
 

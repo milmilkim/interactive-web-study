@@ -39,7 +39,7 @@ export default class GameHandler {
     this.coinText = this.finishiScreen.querySelector('.coin');
     this.replayBtn = this.finishiScreen.querySelector('#replay-img');
     this.replayBtn.addEventListener('click', () => {
-      this.hideReadyScreen();
+      this.hideFinishScreen();
     });
 
     this.status = 'READY';
@@ -130,6 +130,7 @@ export default class GameHandler {
 		duration: 0.1,
 	})
 	this.status = 'PLAYING';
+	console.log(this.app)
 	this.app.reset();
   }
 }
