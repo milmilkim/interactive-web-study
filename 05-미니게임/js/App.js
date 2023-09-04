@@ -32,8 +32,6 @@ export default class App {
     this.player = new Player();
     this.coins = [];
     this.score = new Score();
-
-    console.log('reset');
   }
 
   init() {

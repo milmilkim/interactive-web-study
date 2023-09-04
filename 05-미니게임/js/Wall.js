@@ -24,7 +24,9 @@ export default class Wall {
 
     this.gapY = getRandomNumBetween(App.height * 0.3, App.height * 0.35);
 
+	// 스크롤 속도
 	this.vx = -6;
+	
 
     this.x = App.width;
     // -this.height 최소값

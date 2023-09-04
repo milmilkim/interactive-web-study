@@ -26,6 +26,14 @@ export default class Player {
     App.canvas.addEventListener('click', () => {
       this.vy += -5;
     });
+
+    App.canvas.setAttribute('tabindex', '0');
+    App.canvas.focus();
+
+    // 키를 눌러도 떠오름..
+    App.canvas.addEventListener('keydown', () => {
+      this.vy += -5;
+    })
   }
 
   update() {

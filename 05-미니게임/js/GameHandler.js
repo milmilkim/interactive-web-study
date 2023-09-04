@@ -130,7 +130,6 @@ export default class GameHandler {
 		duration: 0.1,
 	})
 	this.status = 'PLAYING';
-	console.log(this.app)
 	this.app.reset();
   }
 }
