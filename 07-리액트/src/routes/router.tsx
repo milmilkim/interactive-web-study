@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom';
-import config from '../../config';
 
 const router = createBrowserRouter(
   [
@@ -7,7 +6,7 @@ const router = createBrowserRouter(
   ],
   {
     basename:
-      process.env.NODE_ENV === 'production' ? config.APP_ROOT : '/',
+      process.env.NODE_ENV === 'production' ? '/interactive-web-study/07-리액트/dist/' : '/',
   }
 );
 
