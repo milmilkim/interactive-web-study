@@ -5,8 +5,6 @@ window.addEventListener('load', () => {
 });
 
 function init() {
-
-
   const renderer = new THREE.WebGLRenderer({
     antialias: true,
   });
@@ -24,9 +22,7 @@ function init() {
     500
   );
 
-
   camera.position.z = 5;
-
 
   const render = () => {
     renderer.render(scene, camera);
@@ -43,5 +39,4 @@ function init() {
   render();
 
   window.addEventListener('resize', handleResize);
-
 }
