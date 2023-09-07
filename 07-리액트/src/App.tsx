@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Nudake from './components/Nudake';
+import ArrowImg from './assets/arrow.svg';
+import RotateCanvas from './components/RotateCanvas';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='app'>
+        <section className='section-1'>
+          <header>
+            <h1>Portfolio</h1>
+            <ul>
+              <li>instagram</li>
+              <li>twitter</li>
+              <li>codepen</li>
+            </ul>
+          </header>
+          <main>
+            <div>
+              <Nudake />
+            </div>
+          </main>
+        </section>
+        <section className='section-2'>What is Lorem Ipsum?</section>
+        <section className='section-3'>
+          <aside>
+            <div className='top'>1914 translation by H. Rackham</div>
+            <div className='bottom'>
+              <img src={ArrowImg} />
+              <img src={ArrowImg} />
+            </div>
+          </aside>
+          <article>
+            {`Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.`}
+          </article>
+        </section>
+        <section className='section-4'>
+          <RotateCanvas />
+        </section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer>
+        <div className='email'>test@gmail.com</div>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
